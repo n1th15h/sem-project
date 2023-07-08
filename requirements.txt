@@ -5,7 +5,5 @@ yfinance
 seaborn
 matplotlib
 tensorflow
-math 
-datetime 
 scikit-learn
-io
+
