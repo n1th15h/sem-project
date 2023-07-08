@@ -1,1 +1,11 @@
-ds
+streamlit 
+pandas
+numpy 
+yfinance
+seaborn as sns
+matplotlib
+tensorflow
+math 
+datetime 
+scikit-learn
+io
