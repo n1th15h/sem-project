@@ -2,7 +2,7 @@ streamlit
 pandas
 numpy 
 yfinance
-seaborn as sns
+seaborn
 matplotlib
 tensorflow
 math 
