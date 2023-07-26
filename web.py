@@ -127,7 +127,7 @@ def plot_model(model,df,stocks,Price) :
 
     fig, ax1 = plt.subplots(figsize=(16, 8))
     plt.title(f"Train vs Test and Prediction Plot for {stocks}")
-    plt.ylabel(f"{price}", fontsize=18)
+    plt.ylabel(f"{price} Price", fontsize=18)
     sns.set_palette(["#090364", "#1960EF", "#EF5919"])
     sns.lineplot(data=df_union_zoom[['y_pred', 'y_train', 'y_test']], linewidth=1.0, dashes=False, ax=ax1)
     plt.legend()
