@@ -126,7 +126,7 @@ def plot_model(model,df,stocks,Price) :
     df_union_zoom = df_union[df_union.index > display_start_date]
 
     fig, ax1 = plt.subplots(figsize=(16, 8))
-    plt.title("y_pred vs y_test")
+    plt.title(f"Train vs Test and Prediction Plot for {stocks}")
     plt.ylabel(stocks, fontsize=18)
     sns.set_palette(["#090364", "#1960EF", "#EF5919"])
     sns.lineplot(data=df_union_zoom[['y_pred', 'y_train', 'y_test']], linewidth=1.0, dashes=False, ax=ax1)
