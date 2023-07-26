@@ -21,7 +21,7 @@ sns.set_style('white', { 'axes.spines.right': False, 'axes.spines.top': False})
 import io
 import datetime
 
-tickers = ('HDFC.NS','TCS.NS','POWERGRID.NS','BAJAJ-AUTO.NS')
+tickers = ('HDFCBANK.NS','TCS.NS','POWERGRID.NS','BAJAJ-AUTO.NS')
 time_intervals=["DAILY","15 MINUTES"]
 time_intervalss=["Daily","15 minutes"]
 
@@ -256,7 +256,7 @@ elif section == 'Analysis':
     start = '2016-01-01'
     
 #1         
-    if time_interval2 == "Daily" and stocks =="HDFC.NS" and price == "Adj Close" and models == "CNN-LSTM":
+    if time_interval2 == "Daily" and stocks =="HDFCBANK.NS" and price == "Adj Close" and models == "CNN-LSTM":
         M=load_model("MODELS/cnn_hdfc_adj(D).h5")
         DF=yf.download(stocks,start,end)
         fig,valid,MAE,MAPE,MDAPE,final= plot_model(M, DF, stocks, price)
@@ -324,7 +324,7 @@ elif section == 'Analysis':
           
 
 #5         
-    if time_interval2 == "Daily" and stocks =="HDFC.NS" and price == "Close" and models == "CNN-LSTM":
+    if time_interval2 == "Daily" and stocks =="HDFCBANK.NS" and price == "Close" and models == "CNN-LSTM":
         M=load_model("MODELS/cnn_hdfc_clo(D).h5")
         DF=yf.download(stocks,start,end)
         fig ,valid ,MAE,MAPE,MDAPE,final= plot_model(M, DF, stocks, price)
@@ -389,7 +389,7 @@ elif section == 'Analysis':
           st.dataframe(df_summary)
 
 #9         
-    if time_interval2 == "15 minutes" and stocks =="HDFC.NS" and price == "Adj Close" and models == "CNN-LSTM":
+    if time_interval2 == "15 minutes" and stocks =="HDFCBANK.NS" and price == "Adj Close" and models == "CNN-LSTM":
         M=load_model("MODELS/cnn_hdfc_adj(15m).h5")
         DF=yf.download(stocks,period='60d',interval='15m')
         fig ,valid,MAE,MAPE,MDAPE,final = plot_model(M, DF, stocks, price)
@@ -454,7 +454,7 @@ elif section == 'Analysis':
           st.dataframe(df_summary)
 #GRU
 #1         
-    if time_interval2 == "Daily" and stocks =="HDFC.NS" and price == "Adj Close" and models == "GRU":
+    if time_interval2 == "Daily" and stocks =="HDFCBANK.NS" and price == "Adj Close" and models == "GRU":
         M=load_model("MODELS/GRU_hdfc_adj(D).h5")
         DF=yf.download(stocks,start,end)
         fig,valid,MAE,MAPE,MDAPE,final  = plot_model(M, DF, stocks, price)
@@ -520,7 +520,7 @@ elif section == 'Analysis':
            
 
 #5         
-    if time_interval2 == "Daily" and stocks =="HDFC.NS" and price == "Close" and models == "GRU":
+    if time_interval2 == "Daily" and stocks =="HDFCBANK.NS" and price == "Close" and models == "GRU":
         M=load_model("MODELS/GRU_hdfc_clo(D).h5")
         DF=yf.download(stocks,start,end)
         fig,valid,MAE,MAPE,MDAPE ,final = plot_model(M, DF, stocks, price)
@@ -585,7 +585,7 @@ elif section == 'Analysis':
           st.dataframe(df_summary)
 
 #9         
-    if time_interval2 == "15 minutes" and stocks =="HDFC.NS" and price == "Adj Close" and models == "GRU":
+    if time_interval2 == "15 minutes" and stocks =="HDFCBANK.NS" and price == "Adj Close" and models == "GRU":
         M=load_model("MODELS/GRU_hdfc_adj(15m).h5")
         DF=yf.download(stocks,period='60d',interval='15m')
         fig,valid,MAE,MAPE,MDAPE,final  = plot_model(M, DF, stocks, price)
@@ -668,7 +668,7 @@ elif section == 'Prediction':
         end =  date.today().strftime("%Y-%m-%d")
         start = '2016-01-01'
  #1       
-    if time_interval2 == "Daily" and stocks =="HDFC.NS" and price == "Adj Close" and models == "CNN-LSTM":
+    if time_interval2 == "Daily" and stocks =="HDFCBANK.NS" and price == "Adj Close" and models == "CNN-LSTM":
         M=load_model("MODELS/cnn_hdfc_adj(D).h5")
         DF=yf.download(stocks,start,end)
         fig,valid,MAE,MAPE,MDAPE,final= plot_model(M, DF, stocks, price)
@@ -744,7 +744,7 @@ elif section == 'Prediction':
           
 
 #5         
-    if time_interval2 == "Daily" and stocks =="HDFC.NS" and price == "Close" and models == "CNN-LSTM":
+    if time_interval2 == "Daily" and stocks =="HDFCBANK.NS" and price == "Close" and models == "CNN-LSTM":
         M=load_model("MODELS/cnn_hdfc_clo(D).h5")
         DF=yf.download(stocks,start,end)
         fig ,valid ,MAE,MAPE,MDAPE,final= plot_model(M, DF, stocks, price)
@@ -817,7 +817,7 @@ elif section == 'Prediction':
 
 
 #9         
-    if time_interval2 == "15 minutes" and stocks =="HDFC.NS" and price == "Adj Close" and models == "CNN-LSTM":
+    if time_interval2 == "15 minutes" and stocks =="HDFCBANK.NS" and price == "Adj Close" and models == "CNN-LSTM":
         M=load_model("MODELS/cnn_hdfc_adj(15m).h5")
         DF=yf.download(stocks,period='60d',interval='15m')
         fig ,valid,MAE,MAPE,MDAPE,final = plot_model(M, DF, stocks, price)
@@ -890,7 +890,7 @@ elif section == 'Prediction':
 
 #GRU
 #1         
-    if time_interval2 == "Daily" and stocks =="HDFC.NS" and price == "Adj Close" and models == "GRU":
+    if time_interval2 == "Daily" and stocks =="HDFCBANK.NS" and price == "Adj Close" and models == "GRU":
         M=load_model("MODELS/GRU_hdfc_adj(D).h5")
         DF=yf.download(stocks,start,end)
         fig,valid,MAE,MAPE,MDAPE,final  = plot_model(M, DF, stocks, price)
@@ -964,7 +964,7 @@ elif section == 'Prediction':
            
 
 #5         
-    if time_interval2 == "Daily" and stocks =="HDFC.NS" and price == "Close" and models == "GRU":
+    if time_interval2 == "Daily" and stocks =="HDFCBANK.NS" and price == "Close" and models == "GRU":
         M=load_model("MODELS/GRU_hdfc_clo(D).h5")
         DF=yf.download(stocks,start,end)
         fig,valid,MAE,MAPE,MDAPE ,final = plot_model(M, DF, stocks, price)
@@ -1037,7 +1037,7 @@ elif section == 'Prediction':
 
 
 #9         
-    if time_interval2 == "15 minutes" and stocks =="HDFC.NS" and price == "Adj Close" and models == "GRU":
+    if time_interval2 == "15 minutes" and stocks =="HDFCBANK.NS" and price == "Adj Close" and models == "GRU":
         M=load_model("MODELS/GRU_hdfc_adj(15m).h5")
         DF=yf.download(stocks,period='60d',interval='15m')
         fig,valid,MAE,MAPE,MDAPE,final  = plot_model(M, DF, stocks, price)
