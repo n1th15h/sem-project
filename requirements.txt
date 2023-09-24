@@ -1,7 +1,7 @@
-streamlit=>1.24.0
+streamlit
 pandas
 numpy 
-yfinance=>0.2.24
+yfinance
 seaborn
 matplotlib
 tensorflow
