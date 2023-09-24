@@ -1,7 +1,7 @@
-streamlit 
+streamlit>=0.78.0
 pandas
 numpy 
-yfinance
+yfinance==0.2.3
 seaborn
 matplotlib
 tensorflow
